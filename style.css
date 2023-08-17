@@ -10,6 +10,19 @@ body {
   background-color: #e1e2e7;
 }
 
+/* examples in dictionary */
+code::before {
+  font-size: 12px;
+  content: "| ";
+}
+
+code {
+  font-size: 14px;
+  margin-left: 15px;
+  color: #929599;
+}
+
+
 nav {
   padding: 1% 20%;
   background-color: #d4d6e4;
@@ -57,23 +70,24 @@ nav {
   pointer-events: none;
 }
 
+#random-btn {
+  background-color: #bfa0eb;
+  border: none;
+
+  border-radius: 5px;
+  padding: 8px;
+  margin-left: 5px;
+}
+
 #content {
   margin: 0 20%;
 }
 
-/* examples in dictionary */
-code::before {
-  font-size: 12px;
-  content: "| ";
-}
-
-code {
-  font-size: 14px;
-  margin-left: 15px;
-  color: #929599;
-}
-
 #definition {
+  /* hide until definition is ready to render */
+  visibility: hidden;
+  display: none;
+
   padding: 10px;
 
   border-radius: 5px;
@@ -113,21 +127,14 @@ code {
   color: #bf8243;
 }
 
+/* error messages */
 #not-found {
+  /* hide until an error occurs */
   display: none;
   visibility: hidden;
 }
 
-#random-btn {
-  background-color: #bfa0eb;
-  border: none;
-
-  border-radius: 5px;
-  padding: 8px;
-  margin-left: 5px;
-}
-
-/* responsive design */
+/* || responsive design */
 @media screen and (max-width: 600px) {
   #content {
     margin: 0 5%;
