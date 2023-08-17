@@ -1,0 +1,143 @@
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+  font-size: 16px;
+
+  line-height: 1.618;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #e1e2e7;
+}
+
+nav {
+  padding: 1% 20%;
+  background-color: #d4d6e4;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchbox {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-input {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+
+  font-size: inherit;
+  padding: 5px 30px;
+  margin: 0 auto;
+
+  border-radius: 8px;
+  border: 2px solid #dbdcdc;
+}
+
+#search-icon {
+  position: absolute;
+
+  color: #8e969f;
+
+  left: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20px;
+
+  pointer-events: none;
+}
+
+#content {
+  margin: 0 20%;
+}
+
+/* examples in dictionary */
+code::before {
+  font-size: 12px;
+  content: "| ";
+}
+
+code {
+  font-size: 14px;
+  margin-left: 15px;
+  color: #929599;
+}
+
+#definition {
+  padding: 10px;
+
+  border-radius: 5px;
+}
+
+#phonetics {
+  display: flex;
+  margin-left: 5px;
+  gap: 5px;
+}
+
+#meanings {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+  margin-left: 5px;
+}
+
+.meaning {
+  padding: 15px;
+  padding-left: 25px;
+
+  background-color: #d4d6e4;
+  border-radius: 8px;
+}
+
+.margin-left {
+  margin-left: 15px;
+}
+
+.synonyms {
+  color: #78a6e7;
+}
+
+.antonyms {
+  color: #bf8243;
+}
+
+#not-found {
+  display: none;
+  visibility: hidden;
+}
+
+#random-btn {
+  background-color: #bfa0eb;
+  border: none;
+
+  border-radius: 5px;
+  padding: 8px;
+  margin-left: 5px;
+}
+
+/* responsive design */
+@media screen and (max-width: 600px) {
+  #content {
+    margin: 0 5%;
+  }
+
+  nav {
+    padding: 1% 5%;
+  }
+
+  #search-input {
+    width: 50%;
+  }
+}
